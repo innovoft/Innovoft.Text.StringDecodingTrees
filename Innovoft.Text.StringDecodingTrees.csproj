@@ -35,6 +35,12 @@
 	</Target>
 
 	<ItemGroup>
+	  <Compile Remove="Benchmarks\**" />
+	  <EmbeddedResource Remove="Benchmarks\**" />
+	  <None Remove="Benchmarks\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<None Update="README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
