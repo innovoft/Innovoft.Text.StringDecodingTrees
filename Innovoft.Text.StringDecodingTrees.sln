@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Innovoft.Text.StringDecodingTrees", "Innovoft.Text.StringDecodingTrees.csproj", "{41A87B31-C61A-4E67-8341-8005D26B21BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Innovoft.Text.StringDecodingTrees", "Innovoft.Text.StringDecodingTrees.csproj", "{41A87B31-C61A-4E67-8341-8005D26B21BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmarks", "Benchmarks", "{B81DA759-D445-4D06-8D84-DA9A7BEA51FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarks", "Benchmarks\Benchmarks.csproj", "{E84A3481-B9C2-40F4-9CAF-23ABFABCE202}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{41A87B31-C61A-4E67-8341-8005D26B21BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41A87B31-C61A-4E67-8341-8005D26B21BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41A87B31-C61A-4E67-8341-8005D26B21BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84A3481-B9C2-40F4-9CAF-23ABFABCE202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84A3481-B9C2-40F4-9CAF-23ABFABCE202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84A3481-B9C2-40F4-9CAF-23ABFABCE202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84A3481-B9C2-40F4-9CAF-23ABFABCE202}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E84A3481-B9C2-40F4-9CAF-23ABFABCE202} = {B81DA759-D445-4D06-8D84-DA9A7BEA51FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {021D2039-4DD9-4F6A-AC4F-37B3C9DE8832}
