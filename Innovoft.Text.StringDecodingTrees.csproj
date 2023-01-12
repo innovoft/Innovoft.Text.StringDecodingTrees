@@ -1,8 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+		<Version>1.0.0</Version>
+		<PackageId>Innovoft.Text.StringDecodingTrees</PackageId>
+		<Title>Innovoft.Text.StringDecodingTrees</Title>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/innovoft/Innovoft.Text.StringDecodingTrees</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>string decoding stream GC efficincy efficient efficient-algorithm</PackageTags>
+		<RootNamespace>Innovoft.Text</RootNamespace>
+		<Authors>Steven Retz</Authors>
+		<Company>Innovoft</Company>
+		<Copyright>Copyright © Innovoft 2021</Copyright>
+		<Description>Innovoft.Text.StringDecodingTrees is a library for efficient string decoding. When decoding the same string multiple times using StringDecodingTree takes a third of the time than Encoding.GeString. Not to mention the GC benifit of not creating the same string over and over.</Description>
+		<PackageProjectUrl>https://github.com/innovoft/Innovoft.Text.StringDecodingTrees</PackageProjectUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
 	
 	<Target Name="SetSourceRevisionId" BeforeTargets="InitializeSourceControlInformation" Condition="$(SourceRevisionId) == ''">
 		<Exec Command="git rev-parse HEAD" ConsoleToMSBuild="True" IgnoreExitCode="False">
