@@ -82,9 +82,7 @@ namespace Innovoft.Text
 			}
 			while (true)
 			{
-				var key = encoded[offset];
-				var keys = tree.keys;
-				tree = keys[key];
+				tree = tree.keys[encoded[offset]];
 				--length;
 				if (length <= 0)
 				{
@@ -102,9 +100,7 @@ namespace Innovoft.Text
 			}
 			while (true)
 			{
-				var key = encoded[offset];
-				var keys = tree.keys;
-				tree = keys[key];
+				tree = tree.keys[encoded[offset]];
 				--length;
 				if (length <= 0)
 				{
