@@ -45,6 +45,20 @@ namespace Innovoft.Text
 			Add(this, encoded, 0, encoded.Length, value);
 		}
 
+		public void SetValue(byte key, string value)
+		{
+			var node = keys[key];
+			if (node == null)
+			{
+				node = new StringDecodingTree(value);
+				keys[key] = node;
+			}
+			else
+			{
+				node.Value = value;
+			}
+		}
+
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public string GetValue(byte[] encoded, int offset, int length)
 		{
