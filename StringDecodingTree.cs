@@ -121,6 +121,24 @@ namespace Innovoft.Text
 				++offset;
 			}
 		}
+
+		public static StringDecodingTree GetTreeNULL(StringDecodingTree tree, byte[] encoded, int offset, int length)
+		{
+			if (length <= 0 || tree == null)
+			{
+				return tree;
+			}
+			while (true)
+			{
+				tree = tree.keys[encoded[offset]];
+				--length;
+				if (length <= 0 || tree == null)
+				{
+					return tree;
+				}
+				++offset;
+			}
+		}
 		#endregion //Methods
 	}
 }
