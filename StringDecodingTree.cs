@@ -40,6 +40,12 @@ namespace Innovoft.Text
 		}
 
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public void Add(byte[] encoded, string value)
+		{
+			Add(this, encoded, 0, encoded.Length, value);
+		}
+
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public string GetValue(byte[] encoded, int offset, int length)
 		{
 			return GetValue(this, encoded, offset, length);
