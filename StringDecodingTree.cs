@@ -63,6 +63,12 @@ namespace Innovoft.Text
 			return keys[encoded];
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public StringDecodingTree GetTreeNULL(byte[] encoded, int offset, int length)
+		{
+			return GetTreeNULL(this, encoded, offset, length);
+		}
+
 		public static void Add(StringDecodingTree tree, byte[] encoded, int offset, int length, string value)
 		{
 			while (true)
