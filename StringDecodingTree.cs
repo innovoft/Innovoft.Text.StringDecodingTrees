@@ -56,6 +56,13 @@ namespace Innovoft.Text
 			keys[key] = null;
 		}
 
+		public StringDecodingTree Remove(byte key)
+		{
+			var node = keys[key];
+			keys[key] = null;
+			return node;
+		}
+
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public void Add(byte[] encoded, int offset, int length, string value)
 		{
