@@ -27,6 +27,22 @@ namespace Innovoft.Text
 
 		#region Properties
 		public string Value { get => this.value; set => this.value = value; }
+
+		public int Count
+		{
+			get
+			{
+				var count = 0;
+				foreach (var key in keys)
+				{
+					if (key != null)
+					{
+						++count;
+					}
+				}
+				return count;
+			}
+		}
 		#endregion //Properties
 
 		#region Methods
