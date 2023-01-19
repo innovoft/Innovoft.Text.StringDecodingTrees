@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Innovoft.Text
 {
+	[DebuggerDisplay("{Value}")]
 	public sealed class StringDecodingTree
 	{
 		#region Fields
