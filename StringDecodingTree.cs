@@ -51,6 +51,11 @@ namespace Innovoft.Text
 			Array.Clear(keys, 0, this.keys.Length);
 		}
 
+		public void ClearKey(byte key)
+		{
+			keys[key] = null;
+		}
+
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public void Add(byte[] encoded, int offset, int length, string value)
 		{
